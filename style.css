@@ -1,0 +1,36 @@
+/* Font Imports Start */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* Font Imports End */
+/* General Start */
+body{
+    margin: 0;
+}
+/* General End */
+/* Navbar Start */
+nav{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+nav .nav-links{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+nav .nav-logo{
+    padding-left: 10px;
+}
+/* Navbar End */
+
+@media (max-width: 400px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav .nav-logo{
+        align-self: center;
+    }
+  }
