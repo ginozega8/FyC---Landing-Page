@@ -1,5 +1,6 @@
 /* Font Imports Start */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 /* Font Imports End */
 /* General Start */
@@ -104,7 +105,7 @@ color: #FF9900;
 background-color: #FF9900;
 height: 4px;
 border: none;
-width: 69%;
+max-width: 340px;
 margin: 0;
 }
 
@@ -121,7 +122,162 @@ margin: 0;
 }
 
 /* Servicios End */
+/* Steps Start */
+.steps{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-bottom: 200px;
+}
 
+.steps-step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px 0 15px;
+}
+
+.steps-step img{
+    border-radius: 100%;
+    border: solid;
+    border-width: 1px;
+    border-color: #b1b3b6;
+}
+
+.steps-text{
+    text-align: center;
+    line-height: 24px;
+}
+
+.steps-text h2{
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+/* Steps End */
+
+/* Proyects Start */
+.proyects{
+    background-color: #141414;
+    padding-bottom: 100px;
+}
+.proyects .title-n-line{
+    margin: 0 50px 0 50px;
+    padding: 40px 0 40px 0;
+}
+.proyects .title-n-line h2{
+    font-size: 40px;
+    color: #ffff;
+    margin: 0;
+}
+.proyects .title-n-line hr{
+    background-color: #FF9900;
+    border: none;
+    height: 3px;
+}
+.swiper{
+width: 45%;
+}
+
+.swiper-slide{
+    text-align: center;
+    background-color: #141414;
+    cursor: grab;
+}
+
+.swiper-slide img{
+width: 100%;
+}
+.swiper-slide h2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right:20px;
+    font-size: 24px;
+    color: #ffff;
+    background-color: #141414;
+    font-family: 'Aboreto', cursive;
+}
+
+.swiper-pagination-progressbar-fill{
+    background-color: #FF9900 !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #FF9900 !important;
+}
+/* Proyects End */
+/* Video Start */
+.video-section{
+text-align: center;
+margin-top: 100px;
+}
+.video-section hr{
+    background-color: #FF9900;
+    border: none;
+    height: 3px;
+    margin: 0 50px 0 50px;
+}
+
+.video-section h2{
+    text-align: left;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 50px 0 50px;
+}
+
+.video-section iframe{
+    margin: 20px 0 20px 0;
+    width: 80vw;
+    height: 600px;
+}
+/* Video End */
+
+/* Contact Start */
+.contact{
+    text-align: center;
+}
+
+.inputs-textarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.inputs-textarea textarea{
+    border-radius: 10px;
+    padding: 10px;
+    border: solid;
+    border-width: 1.5px;
+    resize: none;
+}
+.inputs-textarea textarea:focus{
+    border-color: #FF9900;
+    outline: #FF9900;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputs input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 350px;
+    border-color: #CBCBCB;
+    border: solid;
+    border-width: 1.5px;
+}
+
+.inputs input:focus{
+    border-color: #FF9900;
+    outline: #FF9900;
+}
+/* Contact End */
 @media (max-width: 400px) {
     body{
         font-size: 80%;
@@ -141,11 +297,24 @@ margin: 0;
         width: 90vw;
         height: 90vw;
     }
+    .servicios .servicios-img{
+        gap: 1px;
+    }
     
   }
   @media (max-width: 1388px) {
     .inicio-text{
-        padding-left: 0;
+        padding-left: 10px;
+    }
+    .servicios{
+        margin-left: 10px;
+        margin-right: 0;
+        gap: 0;
+        grid-template-columns:40% 60%;
+        justify-items: center;
+    }
+    .servicios .servicios-text{
+        width: auto;
     }
   }
 
@@ -157,5 +326,38 @@ margin: 0;
         }
     .inicio .inicio-img{
         margin-top: 30px;
+    }
+    .servicios{
+        margin: 100px 0 100px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios .servicios-text{
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+    .servicios .servicios-img{
+        gap: 10px;
+    }
+    .servicios .servicios-img img{
+        width: 30vw;
+    }
+    .steps{
+        flex-direction: column;
+    }
+
+    .swiper{
+        width: 90%;
+        }
+
+    .inputs-textarea{
+        flex-direction: column;
+        margin: 0 10px 0 10px;
+    }
+
+
+    .inputs input{
+        width: auto;
+        max-width: 350px;
     }
   }
