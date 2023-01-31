@@ -3,12 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 /* Font Imports End */
+
 /* General Start */
 body{
     margin: 0;
     font-family: 'Manrope', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 /* General End */
+
 /* Navbar Start */
 nav{
     display: grid;
@@ -23,10 +29,21 @@ justify-content: space-around;
 align-items: center;
 }
 
+nav .nav-links a{
+text-decoration: none;
+color: #141414;
+transition: all 0.3s;
+}
+
+nav .nav-links a:hover{
+color: #FF9900;
+}
+
 nav .nav-logo{
     padding-left: 10px;
 }
 /* Navbar End */
+
 /* Inicio Start */
 .inicio-bg-container{
     padding-bottom: 100px;
@@ -63,11 +80,13 @@ font-weight: 700;
     margin: 0;
     padding: 0;
 }
+
 .inicio-text .inicio-desc{
     font-weight: 400;
     color: #31353B;
     line-height: 20px;
 }
+
 .inicio-text button{
     background-color: #F85A47;
     color: #ffff;
@@ -75,6 +94,17 @@ font-weight: 700;
     border: none;
     border-radius: 4px;
     padding: 15px;
+    transition: all 0.3s;
+}
+
+.inicio-text button a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.inicio-text button:hover{
+    transform: scale(1.08);
+    background-color:#dd4e3e;
 }
 /* Inicio End */
 
@@ -237,6 +267,8 @@ margin-top: 100px;
 /* Contact Start */
 .contact{
     text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .inputs-textarea{
@@ -277,7 +309,58 @@ margin-top: 100px;
     border-color: #FF9900;
     outline: #FF9900;
 }
+
+.contact form button{
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #F85A47;
+    color: #ffff;
+    font-size: 20px;
+    border: none;
+}
 /* Contact End */
+
+/* Footer Start */
+footer{
+    background-color: #141414;
+    display: flex;
+    flex-direction: row;
+}
+footer .media i{
+    margin: 20px 0 20px 0;
+    padding: 5px;
+    font-size: 38px;
+    border: solid;
+    border-width: 0;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+}
+
+footer .media{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-contact{
+padding-left: 20px;
+border-width: 0.5px;
+border-left: solid;
+color: #3F3D3D;
+}
+
+footer .footer-contact h2{
+    color: #ffff;
+}
+
+footer .footer-contact p{
+    color: #928E8E;
+}
+/* Footer End */
 @media (max-width: 400px) {
     body{
         font-size: 80%;

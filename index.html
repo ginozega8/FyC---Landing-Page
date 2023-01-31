@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>FyC - Construcción y Decoración</title>
 </head>
@@ -17,21 +20,21 @@
             <img src="/src/Icons/fyc.png" width="50" height="60"/>
         </div>
         <div class="nav-links">
-            <a>Inicio</a>
-            <a>Servicios</a>
-            <a>Proyectos</a>
-            <a>Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyects">Proyectos</a>
+            <a href="#contact">Contacto</a>
         </div>
     </nav>
     <!-- Navbar End -->
     <!-- Inicio Start -->
-    <section class="inicio">
+    <section class="inicio" id="inicio" data-aos="fade-right">
         <div class="inicio-text">
             <p class="somos-fc">Somos FC - Construcción y Decoración</p>
             <h1>Construye y Decora tu Espacio</h1>
             <p class="inicio-desc">Somos una empresa orientada la decoración y construcción de sólida trayectoria y experiencia, ofrecemos una propuesta integral
                 y adaptada a las necesidades de nuestros clientes.</p>
-            <button>Conocé Más</button>
+            <button><a href="#servicios">Conocé Más</a></button>
         </div>
         <div class="inicio-img">
         <img src="src/casa-beige.jfif" width="400" height="400" alt="casa-beige"/>
@@ -41,13 +44,13 @@
     <!-- Inicio End -->
 
     <!-- Servicios Start -->
-    <section class="servicios">
+    <section class="servicios" id="servicios" data-aos="fade-left">
         <div class="servicios-text">
             <h2>Nuestros Servicios</h2>
             <hr>
             <p>
             Contamos con un equipo de profesionales que nos acompañan en cada uno de nuestros proyectos, profesionales
-            que trabajan arduamente en servicios de construcción, decoración e incluso trabajos de altura.
+            que trabajan arduamente en servicios de construcción, decoración, remodelación, planos, dirección de obra, trabajos de altura y más.
             <br>
             <br>
             La calidad constructiva y las terminaciones son fundamentales en nuestra manera de trabajar, Siempre
@@ -64,7 +67,7 @@
 
     <!-- Steps Start -->
     <section class="steps">
-        <div class="steps-step">
+        <div class="steps-step" data-aos="fade-up">
             <img src="src/step-1.jpg" width="200" height="200">
             <div class="steps-text">
             <h2>Escuchamos</h2>
@@ -77,7 +80,7 @@
             </div>
         </div>
 
-        <div class="steps-step">
+        <div class="steps-step" data-aos="fade-down">
             <img src="src/step-2.jpg" width="200" height="200">
             <div class="steps-text">
             <h2>Planificamos</h2>
@@ -89,7 +92,7 @@
             </div>
         </div>
 
-        <div class="steps-step">
+        <div class="steps-step" data-aos="fade-up">
             <img src="src/step-3.jpg" width="200" height="200">
             <div class="steps-text">
             <h2>Realizamos</h2>
@@ -105,7 +108,7 @@
     </section>
     <!-- Steps End -->
     <!-- Proyects Start -->
-    <section class="proyects">
+    <section class="proyects" id="proyects">
         <div class="title-n-line">
         <h2>Nuestras Obras</h2>
         <hr>
@@ -158,13 +161,14 @@
     
     <!-- Video Start -->
     <section class="video-section">
-        <h2>Proyecto X</h2>
+        <h2>Obra en Escobar</h2>
         <hr>
         <iframe width="800" height="500" src="https://www.youtube.com/embed/6DIcP9rz_ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
     <!-- Video End -->
+
     <!-- Contact Start -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contactanos</h2>
         <form action="https://formsubmit.co/74a2ff86a98749823fe8a9d19edc6fae" method="POST">
             <div class="inputs-textarea">
@@ -176,10 +180,29 @@
             </div>
             <textarea type="text" name="message" placeholder="Mensaje" rows="10" cols="50"></textarea>
         </div>
-            <button type="submit">Send</button>
+            <button type="submit">Enviar</button>
        </form>
     </section>
     <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="media">
+            <a href="https://www.tiktok.com/@franco_deco.2023?lang=es" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            <i class='bx bxl-instagram' ></i>
+            <a href="https://api.whatsapp.com/send/?phone=541158472318" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+        <div class="footer-contact">
+            <h2>DIRECCIÓN:</h2>
+            <p>Col. Este 2451, Belén de Escobar, Provincia de Buenos Aires</p>
+            <h2>NÚMERO DE TELÉFONO</h2>
+            <p>1171169209</p>
+            <p>1158472318</p>
+            <h2>Email</h2>
+            <p>edgardocristin@gmail.com</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./script.js"></script>
 </body>
